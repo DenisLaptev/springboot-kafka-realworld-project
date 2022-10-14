@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>springboot-kafka-realworld-project</artifactId>
+        <groupId>net.javaguides</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>kafka-producer-wikimedia</artifactId>
+    <name>Archetype - kafka-producer-wikimedia</name>
+    <url>http://maven.apache.org</url>
+
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!--to create event source to read data from wikimedia-->
+        <dependency>
+            <groupId>com.launchdarkly</groupId>
+            <artifactId>okhttp-eventsource</artifactId>
+            <version>2.7.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>4.9.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.13.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.13.2.2</version>
+        </dependency>
+    </dependencies>
+</project>
